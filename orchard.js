@@ -238,11 +238,39 @@ I repeated this with gala and pink. The math seems to check out!
 
 // CODE HERE 
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
 
 
+
+let fujiPounds = 0
+let galaPounds = 0
+let pinkPounds = 0
+
+for (let i = 0; i<fujiTons.length; i++){
+    fujiPounds += fujiTons[i];
+}
+fujiPounds *= 2000
+
+for (let i = 0; i<galaTons.length; i++){
+    galaPounds += galaTons[i];
+}
+galaPounds *= 2000
+
+for (let i = 0; i<pinkTons.length; i++){
+    pinkPounds += pinkTons[i];
+}
+pinkPounds *= 2000
+
+console.log(fujiPounds + " pounds of fuji")
+console.log(galaPounds + " pounds of gala")
+console.log(pinkPounds + " pounds of pink")
+
+/*
+
+MY COMMENTS: First, I set all the pound varaibles to zero
+Then I used a for loop to add the total amount of tons together
+Then I multiplied each by 2000 to get the pound amount and used console.log
+
+*/
 
 
 
@@ -265,11 +293,22 @@ I repeated this with gala and pink. The math seems to check out!
 
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
 
 
+let fujiProfit = (fujiPounds * fujiPrice)
+let galaProfit = (galaPounds * galaPrice)
+let pinkProfit = (pinkPounds * pinkPrice)
+
+console.log(`$${fujiProfit}` + " fuji profit")
+console.log(`$${galaProfit}` + " gala profit")
+console.log(`$${pinkProfit}` + " pink profit")
+
+/*
+
+MY COMMENTS: I did a simple formula to multiply the pounds by the price
+then, to make it more readable, I used the console.log to add a dollar sign to the beginning
+
+*/
 
 
 
@@ -285,3 +324,13 @@ I repeated this with gala and pink. The math seems to check out!
 */
 
 // CODE HERE
+
+let totalProfit = fujiProfit + galaProfit + pinkProfit
+console.log(`$${totalProfit}` + " total profit")
+
+/*
+
+MY COMMENTS: I did a simple formula to add all the profits together
+and get the total profit. Added some text for readability in the console.
+
+*/
