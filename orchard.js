@@ -144,7 +144,19 @@ let days = 0
 
 // CODE HERE
 
+while (acresLeft > 0){
+    days += 1
+    acresLeft -= averageDailyAcres
+}
+console.log(days)
 
+/*
+
+MY COMMENTS: wrote the while loop so that as long as there are acres left there would be one more day added,
+then the number of averageDailyAcres would be subtracted from that number. It repeates until the number got to zero
+tested and returned 20 days.
+
+*/
 
 // PROBLEM 4
 
