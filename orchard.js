@@ -51,8 +51,38 @@ const pinkPrice = .55
 
 // CODE HERE
 
+let sumFujiAcres = 0;
+let sumGalaAcres = 0;
+let sumPinkAcres = 0;
 
 
+for (let i = 0; i<fujiAcres.length; i++){
+    sumFujiAcres += fujiAcres[i];
+}
+//console.log(sumFujiAcres)
+
+for (let i = 0; i<galaAcres.length; i++){
+    sumGalaAcres += galaAcres[i];
+}
+//console.log(sumGalaAcres)
+
+for (let i = 0; i<pinkAcres.length; i++){
+    sumPinkAcres += pinkAcres[i];
+}
+//console.log(sumPinkAcres)
+
+let totalAcres = sumFujiAcres + sumGalaAcres + sumPinkAcres
+
+console.log(totalAcres)
+//returns 63
+
+/*
+
+MY COMMENTS: first I created let variables for the sum of each array and set it to zero. Then I created a for loop
+for each one that would add each number of acres from each day and save it to the variable I created. I checked that each
+was working with console.log. I finished by setting the totalAcres variable to equal the sum of the other three
+
+*/
 
 
 // PROBLEM 2
@@ -69,8 +99,15 @@ const pinkPrice = .55
 
 // CODE HERE
 
+let averageDailyAcres = totalAcres / 7
+console.log(averageDailyAcres)
+// returns 9
 
+/*
 
+MY COMMENTS: Calculated the average simply by dividing totalAcres by 7
+
+*/
 
 
 // PROBLEM 3
