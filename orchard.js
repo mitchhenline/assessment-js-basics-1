@@ -184,13 +184,40 @@ tested and returned 20 days.
 
 // CODE HERE
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+let fujiM = fujiAcres.slice()
+let galaM = galaAcres.slice()
+let pinkM = pinkAcres.slice()
 
+let fujiTons = []
+let galaTons = []
+let pinkTons = []
 
+//console.log(fujiM)
 
+for (let i = 0; i < fujiM.length; i++){
+   fujiTons.push(fujiM[i] * 6.5)
+}
 
+for (let i = 0; i < galaM.length; i++){
+    galaTons.push(galaM[i] * 6.5)
+}
+
+for (let i = 0; i < pinkM.length; i++){
+    pinkTons.push(pinkM[i] * 6.5)
+}
+
+console.log(fujiTons)
+console.log(galaTons)
+console.log(pinkTons)
+
+/*
+
+MY COMMENTS: First, I created variables fujiM, galaM and pinkM and set them as copies of the acres arrays.
+Then, I set the fujiTons, galaTons and pinkTons variables to empty arrays
+Then I took the acre numbers set in the fujiM arrays and multiplied each index by 6.5 in a for loop
+I repeated this with gala and pink. The math seems to check out!
+
+*/
 
 
 // PROBLEM 5
